@@ -1,0 +1,17 @@
+[Unit]
+Description=Telegram Bot
+After=postgresql.service
+Requires=postgresql.service
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/petfight/backend/telegram_bot
+Environment="PATH=/home/petfight/backend/telegram_bot/venv/bin"
+OOMScoreAdjust=-100
+ExecStart=/home/petfight/backend/telegram_bot/venv/bin/python bot.py --start
+ExecStop=/home/petfight/backend/telegram_bot/venv/bin/python bot.py --stop
+ExecReload=/home/petfight/backend/telegram_bot/venv/bin/python bot.py --restart
+TimeoutSec=10
+Restart=always
+[Install]
+WantedBy=multi-user.target

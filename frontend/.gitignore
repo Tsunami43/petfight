@@ -1,0 +1,47 @@
+# Flutter/Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+pubspec.lock
+
+# Build outputs
+build/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/App.framework
+ios/Flutter/Generated.xcconfig
+ios/Pods/
+ios/.symlinks/
+android/.gradle/
+android/app/build/
+
+# Miscellaneous
+*.jks
+*.keystore
+*.iml
+.idea/
+*.lock
+*.log
+*.tmp
+
+# VS Code settings
+.vscode/
+.history/
+
+# macOS files
+.DS_Store
+
+# Other
+*.swp
+*.swo
+*.tmp
+*.pid
+*.seed
+*.tgz
+
+# User-specific files
+*.user
+*.user-osx
+*.user-win

@@ -1,0 +1,63 @@
+# Python
+*.pyc
+__pycache__/
+.vscode/
+.env
+*.log
+node_modules/
+
+# Environments
+Caddyfile
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+
+frontend/build/*
+
+# Но не игнорировать папку frontend/build/web
+!frontend/build/web
+
+# Также не игнорировать все файлы и папки внутри frontend/build/web
+!frontend/build/web/*
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json

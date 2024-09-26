@@ -1,0 +1,17 @@
+[Unit]
+Description=Tasks Service
+After=postgresql.service
+Requires=postgresql.service
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/petfight/backend/tasks_service
+Environment="PATH=/home/petfight/backend/tasks_service/venv/bin"
+OOMScoreAdjust=-100
+ExecStart=/home/petfight/backend/tasks_service/venv/bin/python app.py --start
+ExecStop=/home/petfight/backend/tasks_service/venv/bin/python app.py --stop
+ExecReload=/home/petfight/backend/tasks_service/venv/bin/python app.py --restart
+TimeoutSec=10
+Restart=always
+[Install]
+WantedBy=multi-user.target
