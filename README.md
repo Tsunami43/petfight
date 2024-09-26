@@ -26,7 +26,7 @@ User data is protected during the transition from Telegram to the application th
 
 ## Links
 
-- [Go to the Telegram Bot](https://t.me/tsucintosh)
+- [Send me](https://t.me/tsucintosh)
 - [Read the License](LICENSE)
 - [Join Our Community on Telegram](https://t.me/petfightclub)
 
